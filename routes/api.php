@@ -14,5 +14,6 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/user', 'SampleController@api_user')->middleware('auth:api');
-Route::get('/ping', 'SampleController@api_ping');
+Route::any('/ping', 'SampleController@api_ping');
+Route::any('/aaa', 'SampleController@api_aaa');
 
